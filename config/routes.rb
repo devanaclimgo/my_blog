@@ -14,4 +14,5 @@ Rails.application.routes.draw do
   root "initial_page#index"
 
   resources :posts
+  get "my_posts", to: "posts#my_posts"
 end
