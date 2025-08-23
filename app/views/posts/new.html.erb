@@ -1,0 +1,9 @@
+<%= link_to "Return to my posts", my_posts_path %>
+
+<%= form_with model: @post do |form| %>
+
+<%= form.text_field :title, placeholder: "Title" %>
+<%= form.text_field :description, placeholder: "Description" %>
+<%= form.submit "Send" %>
+
+<% end %>
