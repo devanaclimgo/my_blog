@@ -6,4 +6,8 @@ class PostsController < ApplicationController
   def my_posts
     @posts = current_user.posts
   end
+
+  def new
+    @post = Post.new
+  end
 end
